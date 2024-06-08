@@ -1,0 +1,19 @@
+<mat-dialog-content>
+    <h1 mat-dialog-title>{{titulo}} Category</h1>
+    <div>
+        <form [formGroup]="form" class="form-category">
+            <mat-form-field class="input-form">
+                <mat-label>Category</mat-label>
+                <input matInput formControlName="nameCategory" required />
+                @if (form.get("nameCategory")?.hasError("required")) {
+                <mat-error>You must enter a category</mat-error>
+                }
+            </mat-form-field>
+        </form>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button [disabled]="form.invalid" mat-raised-button mat-dialog-close color="primary"
+        (click)="onSubmit()">{{titulo}}</button>
+    <button mat-raised-button mat-dialog-close color="warn">Cancel</button>
+</mat-dialog-actions>

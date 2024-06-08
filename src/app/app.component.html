@@ -1,0 +1,25 @@
+<mat-toolbar color="primary"> </mat-toolbar>
+
+<div class="container">
+  <div class="row">
+    <!-- El primer div ocupa 1 columna -->
+    <div class="col-2 item1">
+      <mat-accordion>
+        <mat-expansion-panel hideToggle class="custom-expansion-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>menu</mat-icon>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <button mat-menu-item routerLink="/paises" class="btn">Países</button>
+          <button mat-menu-item routerLink="/moduloPagos" class="btn">Modulo de pagos</button>
+          <button mat-menu-item routerLink="/category" class="btn">Categoria </button>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    
+    <div class="col-8 item2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

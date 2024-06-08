@@ -1,0 +1,18 @@
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    /* Alinea los elementos al inicio del contenedor */
+}
+
+.custom-expansion-panel {
+    max-width: 110px;
+    /* Ajusta el ancho del panel según tus necesidades */
+    margin-bottom: 10px;
+    /* Ajusta el espacio inferior */
+}
+
+.listar {
+    flex-grow: 1;
+    /* Permite que la lista ocupe el resto del espacio disponible */
+    cursor: pointer;
+}
